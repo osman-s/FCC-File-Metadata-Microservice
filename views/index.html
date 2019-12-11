@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>File Metadata</title>
+    <link
+      rel="shortcut icon"
+      href=""
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Awesome Fonts -->
+    <script
+      src="https://kit.fontawesome.com/51238edcb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Set Local CSS Style -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>API Project: File Metadata Microservice</h2>
+      <h3>User Stories:</h3>
+      <div>
+        <ol>
+          <li>I can submit a form object that includes a file upload.</li>
+          <li>
+            The from file input field has the "name" attribute set to "upfile".
+            We rely on this in testing.
+          </li>
+          <li>
+            When I submit something, I will receive the file name, and size in
+            bytes within the JSON response.
+          </li>
+        </ol>
+      </div>
+      <h3>Usage:</h3>
+      <p>
+        Please Upload a File ...
+      </p>
+      <div class="view">
+        <h4 id="output"></h4>
+        <form
+          enctype="multipart/form-data"
+          method="POST"
+          action="/api/fileanalyse"
+        >
+          <input id="upfile" type="file" name="upfile" />
+          <input id="button" type="submit" value="Upload" />
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="">
+        <a href="https://www.linkedin.com/in/osman-s-hasan-493001a1/">
+          <span ><i class="fab fa-linkedin-in"></i></span>
+        </a>
+        <a href="https://github.com/osman-s?tab=projects">
+          <span ><i class="fab fa-github"></i></span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
